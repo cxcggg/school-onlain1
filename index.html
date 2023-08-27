@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>unknown</title>
+</head>
+<body>
+<div class="wraper">
+    <header class="header">
+        <div class="header__container _container">
+            <a href="" class="header__logo logo">
+                <img src="/img/logo-rus-short.png" alt="Logo" class="header__logo-img">
+            </a>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <span href="" class="menu__link catalog-btn">Каталог</span>
+                        <div class="menu__catalog-menu catalog-menu">
+                            <ul class="catalog-menu__sections">
+                                <li class="catalog-menu__sections-item active" data-path="p1">ОГЭ</li>
+                                <li class="catalog-menu__sections-item" data-path="p2">ЕГЭ</li>
+                                <li class="catalog-menu__sections-item" data-path="p3">ДВИ</li>
+                                <li class="catalog-menu__sections-item" data-path="p4">Другое</li>
+                            </ul>
+                            <div class="catalog-menu__content active" data-target="p1">
+                                <ul class="catalog-menu__subjecst-list">
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Математика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Физика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Химия</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Информатика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Английский</a></li>
+                                </ul>
+                            </div>
+                            <div class="catalog-menu__content" data-target="p2">
+                                <ul class="catalog-menu__subjecst-list">
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Митематика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Физика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Информатика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Английский</a></li>
+                                </ul>
+                            </div>
+                            <div class="catalog-menu__content" data-target="p3">
+                                <ul class="catalog-menu__subjecst-list">
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Физика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Информатика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Английский</a></li>
+                                </ul>
+                            </div>
+                            <div class="catalog-menu__content" data-target="p4">
+                                <ul class="catalog-menu__subjecst-list">
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Математикаl</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Физика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Английский</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Информатика</a></li>
+                                    <li class="catalog-menu__subject"><a href="#" class="catalog-menu__subject-link">Русский</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#tutors" class="menu__link">Наши преподаватели</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#courses" class="menu__link">Приобрести курс</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#exumples" class="menu__link">Как проходит обучение</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__contact">
+                    <a href="tel:" class="header__number">8 (800) 555-35-35</a>
+                    <a href="" class="header__order-call">Заказать обратный звонок</a>
+                </div>
+                <button class="header__call-btn call-btn"></button>
+                <button class="header__login-btn login-btn">Войти</button>
+                <button class="header__burger burger"></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="left-menu">
+        <div class="left-menu__btn-wrapper">
+            <button class="left-menu__btn"></button>
+            <button class="left-menu__login-btn login-btn">Войти</button>
+        </div>
+        <strong class="left-menu__heading">Выберите раздел</strong>
+        <ul class="left-menu__list">
+            <li class="left-menu__item"><a href="" class="left-menu__link">Каталог</a></li>
+            <li class="left-menu__item"><a href="#about" class="left-menu__link">О нас</a></li>
+            <li class="left-menu__item"><a href="#tutors" class="left-menu__link">Наши преподаватели</a></li>
+            <li class="left-menu__item"><a href="#courses" class="left-menu__link">Приобрести курс</a></li>
+            <li class="left-menu__item"><a href="#exumples" class="left-menu__link">Как проходит обучение</a></li>
+        </ul>
+    </nav>
+    <div class="menu-overlay"></div>
+    <div class="click-close"></div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="_container hero__container">
+                <div class="hero__text">
+                    <h2 class="hero__heading">Начинай обучаться с нами</h2>
+                    <p class="hero__description">Мы молодая онлайн школа по подготовке к ЕГЭ, ОГЭ и олимпиадам, которая только начинает свой путь. Несмотря на это, мы собрали преподавателей, имеющие опыт в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты свох учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>    
+                </div>
+                <div class="hero__buttons">
+                    <a href="" class="hero__start btn btn-bright">Начать обучение</a>
+                    <a href="" class="hero__consult btn btn-border">Получить консультацию</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="_container about__container">
+                <div class="about__content">
+                    <h2 class="about__heading section-heading">О нас</h2>
+                    <p class="about__description">Мы молодая онлайн школа по подготовке к ЕГЭ, ОГЭ и олимпиадам, которая только начинает свой путь. Несмотря на это, мы собрали преподавателей, имеющие опыт в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты свох учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>
+                </div>
+                <!-- <div class="about__bg"><img src="/img/about-bg" alt="bg" class="about__bg-img"></div> -->
+            </div>
+        </section>
+
+        <section class="courses" id="courses">
+            <div class="_container courses__container">
+                <h2 class="courses__heading section-heading">Каталог курсов</h2>
+                <ul class="courses__list">
+                    <li class="courses__item course-card">
+                        <div class="course-card__img-container">
+                            <img src="/img/base-img.jpg" alt="img" class="course-card__img">
+                        </div>
+                        <div class="course-card__content">
+                            <div class="course-card__text">
+                                <strong class="course-card__heding">Базовый курс</strong>
+                                <ul class="course-card__list">
+                                    <li class="course-card__item">Онлайн-занятия с преподавателем</li>
+                                    <li class="course-card__item">От 3 до 5 вебинаров в неделю по 1.5 - 2 часа</li>
+                                    <li class="course-card__item">Домашние задания после вебинара <br> (без проверки преподавателем)</li>
+                                    <li class="course-card__item">Получение теоретического материала</li>
+                                </ul>
+                        </div>
+                        <div class="course-card__btn-container">
+                            <a href="#" class="course-card__btn btn-bright">Взять курс</a>
+                            <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                        </div>
+                        </div>
+                    </li>
+                    <li class="courses__item course-card">
+                        <div class="course-card__img-container">
+                            <img src="/img/base-img.jpg" alt="img" class="course-card__img">
+                        </div>
+                        <div class="course-card__content">
+                            <div class="course-card__text">
+                                <strong class="course-card__heding">Продвинутый курс</strong>
+                                <ul class="course-card__list">
+                                    <li class="course-card__item">Онлайн-занятия с преподавателем</li>
+                                    <li class="course-card__item">От 3 до 5 вебинаров в неделю по 1.5 - 2 часа</li>
+                                    <li class="course-card__item">Домашние задания после вебинара <br> (с проверкой лично преподавателем по критериям ЕГЭ)</li>
+                                    <li class="course-card__item">Получение теоретического материала</li>
+                                </ul>
+                        </div>
+                        <div class="course-card__btn-container">
+                            <a href="#" class="course-card__btn btn-bright">Взять курс</a>
+                            <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                        </div>
+                        </div>
+                    </li>
+                    <li class="courses__item course-card">
+                        <div class="course-card__img-container">
+                            <img src="/img/base-img.jpg" alt="img" class="course-card__img">
+                        </div>
+                        <div class="course-card__content">
+                            <div class="course-card__text">
+                                <strong class="course-card__heding">Индивидуальные занятия</strong>
+                                <ul class="course-card__list">
+                                    <li class="course-card__item">Онлайн-занятия с преподавателем</li>
+                                    <li class="course-card__item">График занятий обсуждаемый</li>
+                                    <li class="course-card__item">Домашние задания проверяются лично преподавателем</li>
+                                    <li class="course-card__item">Получение теоретического материала</li>
+                                    <li class="course-card__item">Подготовка к ОГЭ, ЕГЭ, ДВИ, Олимпиадам</li>
+                                </ul>                        
+                            </div>
+                        <div class="course-card__btn-container">
+                            <a href="#" class="course-card__btn btn-bright">Взять курс</a>
+                            <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tutors" id="tutors">
+            <div class="_container tutors__container">
+                <h2 class="section-heading tutors__heading">Наши преподаватели</h2>
+                <div class="tutors__cards-container">
+                    <div class="tutor-card tutors__card">
+                        <div class="tutor-card__img-wraper">
+                            <img src="/img/fedor.png" alt="avatar" class="tutor-card__img">
+                        </div>
+                        <div class="tutor-card__content">
+                            <div class="tutor-card__text">
+                                <strong class="tutor-card__name">Федор Ушков</strong>
+                                <p class="tutor-card__decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloremque numquam iste consectetur velit quidem atque incidunt neque et ex perferendis, dolor voluptatum voluptate accusamus fuga non, eius, officia cumque.</p>
+                            </div>
+                            <a href="/pages/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="tutor-card tutors__card">
+                        <div class="tutor-card__img-wraper">
+                            <img src="/img/fedor.png" alt="avatar" class="tutor-card__img">
+                        </div>
+                        <div class="tutor-card__content">
+                            <div class="tutor-card__text">
+                                <strong class="tutor-card__name">Федор Ушков</strong>
+                                <p class="tutor-card__decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloremque numquam iste consectetur velit quidem atque incidunt neque et ex perferendis, dolor voluptatum voluptate accusamus fuga non, eius, officia cumque.</p>
+                            </div>
+                            <a href="/pages/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exumples" id="exumples">
+            <div class="_container exumples__container">
+                <h2 class="exumples__heading section-heading">Примеры наших уроков</h2>
+                <p class="exumples__description">
+                    Здесь мы выкладываем самые свежие видео с нашего <a href="#" class="exumples__youtube-link">YouTube канала</a>, на котором мы размещаем некоторые актуальные уроки из наших курсов.
+                </p>
+                <div class="exumples__video-container">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/Js1-H2_a_nU" class="exumples__video-left" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/Z4HLxI2DJXg" class="exumples__video-right" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="clients__container _container">
+                <h2 class="clients__heading section-heading">Отзывы учеников</h2>
+                <ul class="clients__list">
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                    <li class="clients__item user-card">
+                        <div class="user-card__profile">
+                            <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                            <div class="user-card__user-info">
+                                <strong class="user-card__user-name">Ivan Ivanov<a href="" class="user-card__user-vk-link"></a></strong>
+                                <span class="user-card__user-class">11 класс, Математика</span>
+                            </div>
+                        </div>
+                        <p class="user-card__testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vero at corrupti mollitia repellendus ducimus nesciunt? Laborum perferendis cum quo inventore ex, quas consequatur nihil, at debitis, libero fuga voluptates?</p>
+                    </li>
+                </ul>
+                <button class="clients__btn-more btn btn-border">Показать больше отзывов</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <a href="" class="footer__logo">
+                <img src="/img/logo-rus.png" alt="" class="footer__logo-img">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="#about" class="footer__nav-link">О нас</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#tutors" class="footer__nav-link">Наши преподаватели</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#courses" class="footer__nav-link">Приобрести курс</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#exumples" class="footer__nav-link">Как проходит обучение</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__cocial-list">
+                <li class="footer__social-item"><a href="" target="_blank" class="footer__social-link vk-link"></a></li>
+                <li class="footer__social-item"><a href="" target="_blank" class="footer__social-link youtube-link"></a></li>
+                <li class="footer__social-item"><a href="" target="_blank" class="footer__social-link telegram-link"></a></li>
+            </ul>       
+        </div>
+    </footer>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
