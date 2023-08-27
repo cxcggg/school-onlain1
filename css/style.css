@@ -441,7 +441,7 @@ img{
 
     height: 100vh;
     max-width: 720px;
-    padding: 60px 20px;
+    padding: 30px 20px;
 
     background-color: #fff;
 
@@ -783,9 +783,10 @@ img{
     
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: space-between;   
 
     min-height: 520px;
+    height: calc(100% - 250px);
     border: 3px solid #007c7d;
     border-radius: 20px;
     background-color: #fff;
@@ -807,6 +808,37 @@ img{
     font-weight: 700;
 }
 
+.tutors-card__list{
+    margin-bottom: 45px;
+}
+
+.tutor-card__item{
+    position: relative;
+
+    padding-left: 15px;
+
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;    
+}
+
+.tutor-card__item::before{
+    position: absolute;
+    top: 11px;
+    left: 0;
+    content: '';
+
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background-color: #000;
+}
+
+.tutor-card__item:not(:last-child){
+    margin-bottom: 25px;
+}
+
 .tutor-card__decription{
     font-size: 18px;
     line-height: 1.4;
@@ -816,6 +848,9 @@ img{
 .tutor-card__btn-more{
     display: block;
     text-align: center;
+
+    border-bottom-left-radius: 10px 10px;
+	border-bottom-right-radius: 10px 10px;
 
     padding: 15px 0;
 
@@ -849,8 +884,7 @@ img{
 .exumples__video-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center;    
 }
 
 .exumples__youtube-link{
@@ -939,6 +973,19 @@ img{
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
+}
+
+.user-card__user-profi-link{
+    display: inline-block;
+
+    height: 30px;
+    width: 30px;
+    margin-left: 7px;
+
+    background: url('/img/user-icon-profiru.png') center center no-repeat transparent;
+    background-size: cover;
+
+    transform: translateY(1px);
 }
 
 .user-card__user-vk-link{
@@ -1059,7 +1106,7 @@ img{
 .tutors-more{
     /* background: linear-gradient(#ccfb91, #052326); */
     background: url('/img/tutors-more-bg.jpg') center center no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .tutors-more__container{
@@ -1080,7 +1127,7 @@ img{
     align-items: center;
 }
 .tutors-more__card {
-    margin-bottom: 175px;
+    margin-bottom: 50px;
 }
 .more-card {
     display: flex;
@@ -1108,7 +1155,7 @@ img{
     flex-direction: column;
     align-items: center;
 
-    padding: 190px 60px 100px 60px;
+    padding: 190px 60px 60px 60px;
     border-radius: 40px;
 
     border: 12px solid #007c7d;
@@ -1117,47 +1164,63 @@ img{
 }
 .more-card__name {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
-    font-size: 42px;
+    font-size: 1.75rem;
     line-height: 1.5;
     font-weight: 700;
 
     color: #006364;
 }
 .more-card__post {
-    margin-bottom: 55px;
+    margin-bottom: 15px;
 
-    font-size: 42px;
+    font-size: 1.75rem;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 600;    
 }
-.more-card__description {
-    font-size: 25px;
+.more-card__post_padding{
+    margin: 30px 0px 15px 0px;
+}
+.more-card__item {
+    font-size: 1rem;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 600;   
 }
+
+.more-card__number{
+    font-size: 1.25rem;
+    font-weight:700;
+}
+
+.more-card__item:not(:last-child){
+    margin-bottom: 25px;
+}
+
 .tuturs-more__social {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 80px;
+    flex-direction: column;    
+    margin-bottom: 40px;
 }
+
+.tuturs-more__social>*:not(:last-child){
+    margin-bottom: 40px;
+}
+
 .tutors-more__vk-link,
+.tutors-more__youtube-link,
 .tutors-more__telegram-link {
     display: flex;
     align-items: center;
     
-    font-size: 33.33px;
+    font-size: 1.375rem;
     line-height: 1;
     font-weight: 700;
     color: #fff;
 }
-.tutors-more__vk-link{
-    margin-bottom: 95px;
-}
 
 .tutors-more__vk-ikon,
+.tutors-more__youtube-ikon,
 .tutors-more__telegram-ikon {
     width: 82px;
     height: 67px;
@@ -1175,6 +1238,16 @@ img{
     background: url('/img/tutors-more-telegram-icon.png') center center no-repeat transparent;
     background-size: contain;
 }
+
+.utors-more__youtube-link{
+
+}
+
+.tutors-more__youtube-ikon{
+background: url('/img/tutors-more-youtube-play.svg') center center no-repeat transparent;
+background-size: contain;
+}
+
 .tutors-more__logo {
     width: 215px;
     height: 330px;
@@ -1205,16 +1278,16 @@ img{
 .tutors-more__achivements-heading {
     margin-left: -150px;
 
-    font-size: 50px;
+    font-size: 2.0625rem;
     line-height: 1;
     font-weight: 600;
 }
 .tutors-more__achivements-heading-underline{
     display: block;
     width: 480px;
-    height: 3px;
+    height: 4px;
     background-color: #fff;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 70px;
     transform: translateX(-82px);
 }
@@ -1223,7 +1296,7 @@ img{
 .achivements-list {
 }
 .achivements-item {
-    font-size: 33.33px;
+    font-size: 1.375rem;
     line-height: 1.2;
     font-weight: 400;
 }
@@ -1236,7 +1309,7 @@ img{
     align-items: center;
 
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 2.0625rem;
     line-height: 1;
 }
 
@@ -1245,19 +1318,38 @@ img{
     font-weight: 600;
     color: #fff;
 }
+.tutors-more__subjeck-column-container{
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tutors-more__subjeck-column-container>*:not(:last-child){
+    margin-right: 25px;
+}
+.tutors-more__subjeck-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;    
+}
 .tutors-more__subjeck-name {
     margin-bottom: 32px;
     font-weight: 400;
-    color: #f3a01d;
+    color: #f3a01d;    
 }
 .tutors-more__subjeck-img-container {
-    width: 335px;
+    width: 600px;
     height: 221px;
 }
-.tutors-more__subjeck-img {
+.tutors-more__subjeck-img-ximiya{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height:100%;
+    object-fit: contain;       
+}
+.tutors-more__subjeck-img {
+    width:80%;        
+    object-fit: contain; 
+    object-position: center;      
 }
 .tutors-more__decoration {
     position: relative;
@@ -1355,9 +1447,12 @@ img{
 }
 
 @media (max-width: 1309px){
+    .exumples__video-container{
+    flex-direction: column;
+    }
     .exumples__video-left{
         margin: 0 0 80px 0;
-    }
+    }    
 }
 
 @media (max-width: 1266px){
