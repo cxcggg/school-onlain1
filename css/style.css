@@ -751,7 +751,6 @@ img{
     display: flex;
     justify-content: center;
     align-items: stretch;
-    flex-wrap: wrap;
 }
 
 .tutors__cards-container > *:not(:last-child){
@@ -1109,7 +1108,7 @@ img{
     padding: 25px 0;
 }
 
-.tutors-more__container-top{
+.tutors-more__top{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -1498,6 +1497,11 @@ background-size: contain;
 }
 
 @media (max-width: 874px){
+    .tutors__cards-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
     .tutors__cards-container > *:not(:last-child){
         margin: 0 0 45px 0;
     }
@@ -1605,7 +1609,7 @@ background-size: contain;
 /* TUTORS MEDIA */
 
 @media (max-width: 1570px){
-    .tutors-more__container-top{
+    .tutors-more__top{
         flex-direction: column;
         align-items: center;
     }
@@ -1631,8 +1635,8 @@ background-size: contain;
 }
 
 @media (max-width: 980px){
-    .tutors-more__container-top > *,
-    .tutors-more__container-bottom > * {
+    .tutors-more__top > *,
+    .tutors-more__bottom > *{
         width: 100%;
     }
     .tutors-more__achivements-heading{
@@ -1642,8 +1646,9 @@ background-size: contain;
         transform: none;
     }
 }
-@media (max-width: 980px){
-    .tutors-more__container-top{
+@media (max-width: 540px){
+    .tutors-more__top,
+    .tutors-more__bottom{
         padding: 0;
     }
     .more-card__body{
@@ -1657,5 +1662,50 @@ background-size: contain;
     }
     .tutors-more__achivements-heading-underline{
         width: 100%;
+    }
+}
+@media(max-width: 410px){
+    .tutors-more__vk-ikon,
+    .tutors-more__youtube-ikon, 
+    .tutors-more__telegram-ikon {
+        width: 40px;
+        height: 35px;
+        margin-right: 30px;
+    }
+
+    .tutors-more__subjeck-img-container{
+        width: 320px;
+        
+    }
+}
+
+@media(max-width: 410px){
+    ._tutors-wraper{
+        padding: 5px 0;
+    }
+    .more-card__body{
+        padding: 100px 10px 30px 10px;
+    }
+    .tutors-more__achivements{
+        padding: 50px 10px 80px 10px;
+    }
+    .tutors-more__achivements-heading-underline{
+        height: 2px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .tutors-more__achivements-heading,
+    .more-card__post{
+        font-size: 1.5rem;
+    }
+    .achivements-item{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 335px){
+    .tutors-more__vk-ikon, 
+    .tutors-more__youtube-ikon, 
+    .tutors-more__telegram-ikon{
+        margin-right: 15px;
     }
 }
