@@ -1113,9 +1113,11 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 120px;
+    padding: 25px 0;
 }
-
+.tutors-more__column-left {
+    max-width: 700px;
+}
 .tutors-more__column-left,
 .tutors-more__column-right,
 .tutors-more__bottom-left,
@@ -1292,7 +1294,10 @@ background-size: contain;
     margin-bottom: 70px;
     transform: translateX(-82px);
 }
-
+.tutors-more__achivements-list {
+}
+.achivements-list {
+}
 .achivements-item {
     font-size: 1.375rem;
     line-height: 1.2;
@@ -1352,7 +1357,6 @@ background-size: contain;
 .tutors-more__decoration {
     position: relative;
     height: 100px;
-    width: 100%;
     margin-bottom: -25px;
 }
 .tutors-more__decoration-green,
@@ -1600,62 +1604,4 @@ background-size: contain;
         padding: 0;
     }
 
-}
-
-/* TUTORS MEDIA */
-
-@media (max-width: 1570px){
-    .tutors-more__container-top{
-        flex-direction: column;
-        align-items: center;
-    }
-    .tutors-more__card{
-        margin-bottom: 80px;
-    }
-    .tutors-more__bottom-right{
-        justify-content: center;
-    }
-    .tutors-more__decoration{
-        display: none;
-    }
-}
-
-@media (max-width: 1430px){
-    .tutors-more__bottom{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .tutors-more__bottom-right{
-        margin-bottom: 80px;
-    }
-}
-
-@media (max-width: 980px){
-    .tutors-more__container-top > *,
-    .tutors-more__container-bottom > * {
-        width: 100%;
-    }
-    .tutors-more__achivements-heading{
-        margin-left: 0;
-    }
-    .tutors-more__achivements-heading-underline{
-        transform: none;
-    }
-}
-@media (max-width: 980px){
-    .tutors-more__container-top{
-        padding: 0;
-    }
-    .more-card__body{
-        padding: 100px 20px 50px 20px;
-        border: 6px solid #007c7d;
-    }
-    .more-card__img-container{
-        width: 280px;
-        height: 280px;
-        margin-bottom: -100px;
-    }
-    .tutors-more__achivements-heading-underline{
-        width: 100%;
-    }
 }
