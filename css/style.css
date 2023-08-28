@@ -1322,6 +1322,7 @@ background-size: contain;
 }
 .tutors-more__subjeck-column-container>*:not(:last-child){
     margin-right: 25px;
+    margin-bottom: 30px;
 }
 .tutors-more__subjeck-column{
     display: flex;
@@ -1378,6 +1379,9 @@ background-size: contain;
     width: 60%;
 
     background-color: #fff;
+}
+.tutors-more__youtube-link-wrap{
+    display: none;
 }
 /* ------------- MEDIA ---------- */
 
@@ -1665,14 +1669,16 @@ background-size: contain;
     }
 }
 @media(max-width: 410px){
-    .tutors-more__vk-ikon,
-    .tutors-more__youtube-ikon, 
+    .tutors-more__vk-ikon, 
     .tutors-more__telegram-ikon {
         width: 40px;
         height: 35px;
         margin-right: 30px;
     }
-
+    .tutors-more__youtube-ikon{
+        width: 55px;
+        height: 50px;
+    }
     .tutors-more__subjeck-img-container{
         width: 320px;
         
@@ -1708,4 +1714,11 @@ background-size: contain;
     .tutors-more__telegram-ikon{
         margin-right: 15px;
     }
+    .tutors-more__youtube-link{
+        line-height: 1.4;
+    }
+    .tutors-more__youtube-link-wrap{
+        display: initial;
+    }
 }
+
