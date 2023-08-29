@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.menu-overlay').addEventListener('click', function(){
         document.querySelector('.left-menu').classList.remove('left-menu-active');
         document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
+        document.querySelector('._modal-wraper').classList.remove('active');
     });
 
     document.querySelectorAll('.left-menu__link').forEach(function(link){
@@ -56,9 +57,29 @@ window.addEventListener('DOMContentLoaded', function(){
 
     // section clients
 
-    this.document.querySelector('.clients__btn-more').addEventListener('click', function(){
+    document.querySelector('.clients__btn-more').addEventListener('click', function(){
         document.querySelectorAll('.clients__item').forEach(function(item){
             item.style.display = 'block';
         })
     })
+    // modal window
+
+    document.querySelector('.header__order-call').addEventListener('click', function(){
+        document.querySelector('._modal-wraper').classList.add('active');
+        document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+    });
+    document.querySelector('.header__call-btn').addEventListener('click', function(){
+        document.querySelector('._modal-wraper').classList.add('active');
+        document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+    });
+    document.querySelector('.modal-close').addEventListener('click', function(){
+        document.querySelector('._modal-wraper').classList.remove('active');
+        document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
+    });
+    // form mask
+
+    document.getElementById('phone').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+      });
 })

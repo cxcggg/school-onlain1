@@ -82,7 +82,8 @@ img{
 }
 
 *:focus{
-    outline: 2px solid #e33303;
+    opacity: 0.5;
+    outline: none;
 }
 
 .wraper{
@@ -520,6 +521,141 @@ img{
 
 .menu-overlay-active{
     display: block;
+}
+/* --------- MODAL =========== */
+/* call-modal */
+
+._modal-wraper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+._modal-wraper.active{
+    display: initial;
+}
+.call-back {
+    width: 530px;
+    min-height: 600px;
+
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    padding: 20px;
+}
+.call-back__img {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+.call-back__heading {
+    margin-bottom: 15px;
+}
+.modal-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.call-back__description {
+    margin-bottom: 35px;
+}
+.call-back__description,
+.call-back__agreements{
+    width: 380px;
+
+    font-size: 0.875rem;
+    line-height: 1.125;
+    font-weight: 400;
+
+    text-align: center;
+    color: rgb(131, 135, 148);
+}
+.call-back__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 300px;
+    margin-bottom: 35px;
+}
+.call-back__text-input:focus,
+.number-input__feald:focus{
+    border: 2px solid #000;
+    opacity: 1;
+}
+
+.call-back__text-input,
+.number-input__country-sign,
+.number-input__feald{
+    border: 2px solid rgb(224, 226, 231);
+    
+    font-size: 1rem;
+    line-height: 1.25;
+}
+.call-back__text-input {
+    width: 100%;
+    padding: 7px 12px 9px;
+
+    border-radius: 8px;
+    outline: none;
+}
+
+.number-input {
+    display: flex;
+}
+.number-input__country-sign {
+    flex: 0 0 15%;
+    padding: 7px 0 9px 0;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none;
+    text-align: center;
+}
+.number-input__feald {
+    flex: 0 0 85%;
+    padding: 7px 12px 9px;
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.call-back__submit-btn {
+    padding: 7px 20px 9px 20px;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: 600;
+
+    border: 2px solid transparent;
+    color: #fff;
+    background-color: #1b6060;;
+}
+
+.link-underline {
+    text-decoration: underline;
+}
+.modal-close{
+    position: absolute;
+    top: -65px;
+    right: -65px;
+
+    width: 60px;
+    height: 60px;
+
+    background: url('/img/X-white.svg') center no-repeat transparent;
+    background-position: contain;
 }
 
 /*--------- HERO -----------*/

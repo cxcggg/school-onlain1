@@ -96,7 +96,7 @@
                 <div class="header__right">
                     <div class="header__contact">
                         <a href="tel:" class="header__number">8 (800) 555-35-35</a>
-                        <a href="" class="header__order-call">Заказать обратный звонок</a>
+                        <span class="header__order-call">Заказать обратный звонок</span>
                     </div>
                     <button class="header__call-btn call-btn"></button>
                     <button class="header__login-btn login-btn">Войти</button>
@@ -121,6 +121,28 @@
         </nav>
         <div class="menu-overlay"></div>
         <div class="click-close"></div>
+
+        <div class="_modal-wraper">
+            <div class="call-back">
+                <div class="call-back__content modal-content">
+                    <img src="/img/3d-call.webp" alt="call-img" class="call-back__img">
+                    <strong class="call-back__heading modal-heading">получить коснсультацию</strong>
+                    <p class="call-back__description">оставьте свой номер телефона и мы свжемся с вами в течение 5 минут (с 10:00 до 19:00)</p>
+                    <form action="" class="call-back__form">
+                        <input type="text" placeholder="Ваше имя" class="call-back__text-input">
+                        <div class="call-back__number-input number-input">
+                            <div class="number-input__country-sign">+7</div>
+                            <input type="tel" name="" id="phone" placeholder="Номер телефона" class="number-input__feald">
+                        </div>
+                        <button type="submit" class="call-back__submit-btn">отправить</button>
+                    </form>
+                    <div class="call-back__agreements">
+                        <span>Нажимая «отправить», даете свое соглашение на </span><a href="#" target="_blank" class="link-underline">обработку персональных данных</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-close"></div>
+        </div>
 
         <main class="main">
             <section class="hero">
