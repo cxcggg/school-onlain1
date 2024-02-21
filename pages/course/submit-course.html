@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор курса</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+    </style>
+</head>
+<body>
+
+        <div class=" submit-wraper active">
+            <div class="submit">
+                <div class="submit__content modal-content">
+                    <img src="../../img/confirm.png" alt="call-img" class="submit__img modal-img">
+                    <strong class="submit__heading modal-heading">запись на курс</strong>
+                    <p class="submit__p">Вы выбрали:</p>
+                    <div class="submit__choise choise">
+                        <div class="choise__item"><span class="choise__name">Тир курса:</span><span class="choise__course choise__field"></span></div>
+                        <div class=" choise__item"><span class="choise__name">Предмет:</span><span class="choise__subject choise__field"></span></div>
+                        <div class="choise__item"><span class="choise__name">Преподаватель:</span><span class="choise__tutor choise__field"></span></div>
+                        <div class="choise__item"><span class="choise__name">Период:</span><span class="choise__period choise__field"></span></div>
+                    </div>
+                    <p class="submit__text">Введите ваши имя и номер, чтобы наш специалист связался с вами, и записал вас на курс</p>
+                    <form action="php/sendmail.php" method="post" id="submit-form"
+                        class="submit__form modal-form">
+                        <input type="text" name="name" placeholder="Ваше имя"
+                            class="submit__text-input modal-input _req ">
+                        <div class="submit__number-input number-input">
+                            <div class="number-input__country-sign submit-country-sign">+7</div>
+                            <input type="tel" name="number" id="phone" placeholder="Номер телефона"
+                                class="number-input__feald modal-input _req">
+    
+                        </div>
+                        <button type="submit" class="submit__submit-btn btn-bright modal-btn">отправить</button>
+                    </form>
+                    <div class="submit__agreements">
+                        <span>Нажимая «отправить», даете свое соглашение на </span><a href="#" target="_blank"
+                            class="link-underline">обработку персональных данных</a>
+                    </div>
+                </div>
+            </div>
+            <div class="success">
+                <strong class="success__h">Успешно</strong>
+                <p class="success__p">Заявка отправлена, преподавательскоро с вами свяжется и запишет на курс</p>
+                <a href="../../index.html" class="btn btn-bright">На гланую</a>
+            </div>
+        </div>
+        <script src="../../js/submit.js"></script>
+
+</body>
+</html>
